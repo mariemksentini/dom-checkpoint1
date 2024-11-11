@@ -1,0 +1,54 @@
+.total_card{
+    left: 0;
+    position: sticky;
+    z-index: 100; /* Ensures it stays above other elements */
+    width: 10rem;
+}
+
+.layka{
+    color: red;
+}
+.disappear {
+    opacity: 0;
+    transform: scale(0);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+/* Container styling */
+.custom-card {
+    width: auto; /* Adjust width as needed */
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin: 1rem 0;
+    padding: 1rem;
+}
+
+/* Card body styling */
+.card-bdy {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+/* Title and text styling */
+.card-titl {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: #333;
+}
+
+.card-txt {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Sticky position styling */
+.custom-card-container {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
